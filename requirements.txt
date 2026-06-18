@@ -8,3 +8,4 @@ yake
 numpy
 tqdm
 regex
+google-genai
