@@ -1,7 +1,7 @@
 streamlit
 openai-whisper
 python-dotenv
-fpdf
+fpdf2
 deep-translator
 ffmpeg-python
 yake
