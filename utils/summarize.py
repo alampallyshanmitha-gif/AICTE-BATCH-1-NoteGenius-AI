@@ -11,7 +11,7 @@ client = genai.Client(
 def generate_summary(text):
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-2.5-flash",
         contents=f"""
         Summarize the following lecture notes in simple student-friendly points:
 
