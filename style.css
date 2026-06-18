@@ -1,0 +1,160 @@
+/* style.css */
+
+/* ==========================================================================
+   1. GLOBAL CANVAS (VIBRANT SOFT BLUE-TINT FLOOR)
+   ========================================================================== */
+html, body, [data-testid="stAppViewContainer"], 
+[data-testid="stMainBlockContainer"], .stApp {
+    background: linear-gradient(145deg, #EEF2F7 0%, #E0E7FF 100%) !important; /* Soft, highly visible light ice blue */
+    color: #1E293B !important; 
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Master canvas viewport constraints */
+[data-testid="stMainBlockContainer"] {
+    padding: 2rem 3rem !important;
+    max-width: 96% !important;
+}
+
+/* Clear native headers */
+#MainMenu, footer, [data-testid="stHeader"] {
+    visibility: hidden !important;
+    height: 0px !important;
+}
+
+/* ==========================================================================
+   2. SHARP DEEP SLATE NAVY SIDEBAR
+   ========================================================================== */
+[data-testid="stSidebar"], 
+[data-testid="stSidebarContent"], 
+section[data-testid="stSidebar"] > div {
+    background-color: #111625 !important; /* Rich deep slate obsidian */
+    color: #F8FAFC !important;
+    border-right: none !important;
+}
+
+/* Navigation items text and icons treatment */
+[data-testid="stSidebarNav"] label,
+[data-testid="stSidebarNav"] span,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #94A3B8 !important; 
+    font-weight: 500 !important;
+}
+
+/* Active option navigation link hover state */
+[data-testid="stSidebarNav"] a:hover span {
+    color: #A5B4FC !important; /* Soft bright lavender highlight */
+}
+
+/* ==========================================================================
+   3. STRUCTURAL CONTENT CARDS (GLOWING WHITE PANELS)
+   ========================================================================== */
+/* Upgrades container modules into high-visibility floating panel tiles */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: rgba(255, 255, 255, 0.95) !important; /* Crisp luminous gloss white */
+    border: 1px solid #C7D2FE !important; /* Elegant subtle lavender borders */
+    border-radius: 18px !important;
+    box-shadow: 0 10px 30px -5px rgba(99, 102, 241, 0.1) !important; /* Colorful soft drop-shadow */
+    padding: 24px !important;
+}
+
+/* ==========================================================================
+   4. METRICS ROW CARD LAYOUT TWEAKS
+   ========================================================================== */
+div[data-testid="stMetric"] {
+    background-color: #F8FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 14px !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02) !important;
+}
+
+div[data-testid="stMetricValue"] > div {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: #4F46E5 !important; /* Vibrant purple-blue numbers */
+    letter-spacing: -1px !important;
+}
+
+div[data-testid="stMetricLabel"] > div {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #64748B !important;
+    text-transform: uppercase !important;
+}
+
+/* ==========================================================================
+   5. PREMIUM GRADIENT ACTION BUTTONS (MATCHES MOCKUP)
+   ========================================================================== */
+.stButton > button, .stDownloadButton > button {
+    border-radius: 12px !important;
+    padding: 10px 22px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Primary Action Accent - Purple-Indigo Gradient (e.g., Save/Submit Actions) */
+.stButton > button[type="primary"] {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #C084FC 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35) !important;
+}
+
+.stButton > button[type="primary"]:hover {
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Secondary Button - Deep Slate Black (e.g., Start Transcription) */
+.stButton > button[type="secondary"] {
+    background-color: #1A1D2E !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+.stButton > button[type="secondary"]:hover {
+    background-color: #111322 !important;
+}
+
+/* Copy & Download miniature icon utility row items */
+button[key*="main_cp_tr"], button[key*="main_dl_tr"] {
+    background-color: #F1F5F9 !important;
+    color: #475569 !important;
+    border: 1px solid #E2E8F0 !important;
+}
+
+button[key*="main_cp_tr"]:hover, button[key*="main_dl_tr"]:hover {
+    background-color: #E2E8F0 !important;
+    color: #0F172A !important;
+}
+
+/* ==========================================================================
+   6. SECTIONS, INPUT FIELDS & UTILITIES
+   ========================================================================== */
+textarea, input {
+    background-color: #F8FAFC !important;
+    border: 1px solid #C7D2FE !important;
+    border-radius: 12px !important;
+    color: #1E293B !important;
+}
+
+textarea:focus, input:focus {
+    border-color: #6366F1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+}
+
+/* Audio Dropzone box container layout framework */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: #F8FAFC !important;
+    border: 2px dashed #A5B4FC !important;
+    border-radius: 16px !important;
+}
+
+/* Form block notifications elements spacing styling overrides */
+div[data-style="stException"] {
+    border-radius: 12px !important;
+}

@@ -1,0 +1,13 @@
+streamlit==1.36.0
+openai-whisper
+torch
+torchaudio
+torchvision
+python-dotenv
+fpdf
+deep-translator
+ffmpeg-python
+yake
+numpy
+tqdm
+regex
