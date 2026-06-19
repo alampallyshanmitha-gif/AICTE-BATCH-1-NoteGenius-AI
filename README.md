@@ -175,3 +175,15 @@ References
 6. https://deep-translator.readthedocs.io/
 7. https://github.com/LIAAD/yake
 8. https://github.com/
+ -----------
+API Key Configuration
+
+To use NoteGenius AI, users need to provide a valid Google Gemini API key. This allows the application to access Generative AI features such as summaries, keywords, quizzes, flashcards, translations, and chatbot responses.
+
+1. Obtain a Gemini API key from Google AI Studio.
+2. Create a ".env" file in the project directory.
+3. Add your API key as shown below:
+
+GOOGLE_API_KEY=your_api_key_here
+
+Using your own API key ensures reliable access to AI features and allows the application to function smoothly without requiring additional configuration.
